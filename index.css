@@ -1,11 +1,7 @@
-.meat {
-  height: 500px;
+.products-grid {
   background-color: gray;
-}
-
-.meat{
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .grid {
@@ -13,6 +9,7 @@
   max-width: 900px;
   margin: 0 auto;
   background: #CCC;
+  height: 91%
 }
 
 .grid::after {
