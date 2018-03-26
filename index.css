@@ -1,3 +1,7 @@
+.meat {
+  height: 500px;
+  background-color: gray;
+}
 
 .meat{
   width: 100%;
@@ -62,3 +66,28 @@
   padding-top: 40%;
   font-size: 2em;
 }
+
+
+/************/
+/** FOOTER **/
+/************/
+
+.footer-container {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 100%;
+  height: 200px;
+  width: 100%;
+  background: #2F404E;
+  color: white;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.footer-column {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
