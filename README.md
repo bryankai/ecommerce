@@ -1,6 +1,7 @@
 # ecommerce
 
+## Team
 
-## Tean
+* [Abe Q.](https://github.com/abedababe8)
 
-* [Bryan Kai]https://github.com/bryankai
+* [Bryan Kai](https://github.com/bryankai)
