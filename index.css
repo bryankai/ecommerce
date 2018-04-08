@@ -1,3 +1,7 @@
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
 .products-grid {
   background-color: gray;
   width: 100%;
@@ -76,7 +80,7 @@ flex-grow: 1
 
 .footer-container {
   display: flex;
-  height: 200px;
+  /* height: 200px; */
   flex-direction: row;
   flex-wrap: nowrap;
   /* height: 100%; */
