@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+  
+
   const productsGrid = document.querySelector('.products-grid')
 
   const grid = document.createElement('div')
