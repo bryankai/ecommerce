@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-  
+  const signupButton = document.getElementById('email-signup-button')
+  signupButton.addEventListener('click',validateEmail)
 
   const productsGrid = document.querySelector('.products-grid')
 
