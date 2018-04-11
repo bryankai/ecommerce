@@ -5,6 +5,7 @@ const grid = document.createElement('div')
 grid.classList.add('grid')
 const info = document.createElement('div')
 info.classList.add('info')
+// info.classList.add('hide')
 productsGrid.appendChild(info)
 productsGrid.appendChild(grid)
 
@@ -45,8 +46,8 @@ class GridItem{
       const gridInnerImg = document.createElement('img')
         gridInnerImg.setAttribute('src', `${this.products[numOfGridItems].img}`)
         gridInnerImg.addEventListener('click', event => {
+          // info.toggleClass('hide')
           const infoItem = new SpecificInfo(info, this.products[itemID])
-
           infoItem.render()
         });
         gridInnerImg.style.borderRadius = '50%'
@@ -99,15 +100,18 @@ class SpecificInfo{
     const infoDesc = document.createElement('div')
       infoDesc.classList.add('info-desc')
       infoDesc.innerHTML = `${this.product.desc}`
-    const addToCart = document.createElement('div')
-      addToCart.classList.add('add-to-cart')
-      addToCart.innerHTML = 'Add to Cart'
+    const addToCartDiv = document.createElement('div')
+    const addToCart = document.createElement('a')
+      addToCartDiv.classList.add('add-to-cart')
+      addToCart.innerHTML = `<i class="fas fa-cart-plus"></i>`
+
+    addToCartDiv.appendChild(addToCart)
 
     infoText.appendChild(infoTitle)
     infoText.appendChild(infoCompany)
     infoText.appendChild(infoPrice)
     infoText.appendChild(infoDesc)
-    infoText.appendChild(addToCart)
+    infoText.appendChild(addToCartDiv)
     return infoText
   }
   render(){

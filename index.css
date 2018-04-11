@@ -2,20 +2,41 @@
 
 .navbar {
   width: 100%;
-  height: 75px;
+  height: 60px;
   background-color: #2F404E;
   display: flex;
+  background-color: Lavender;
+}
+.navTitle{
+  font-size: 59px;
+  /* margin-left: 10px; */
 }
 .navLogo {
-  height: 65px;
-  width: 65px;
-  margin: 5px;
-  margin-left: 0px;
+  height: 59px;
+  width: 59px;
+  /* margin-left: 10px; */
+  /* transform: rotate(270deg); */
+}
+.navBrand {
+  display: flex;
+  width: 30%;
+  height: 100%
+}
+.navLink {
+  margin: 3px;
+  font-size: 25px;
+  height: 50%
+}
+.navOptions{
+  display: flex;
+  width: 70%;
+  height: 100%;
 }
 .cart {
-  position: absolute;
-  /* margin-left: 800px; */
-  margin-right: 10px;
+  font-size: 40px
+  /* position: absolute;
+  margin-left: 800px;
+  margin-right: 10px; */
 
 }
 
@@ -29,11 +50,6 @@ body {
 /** HOMEPAGE **/
 
 /**************/
-
-.navbar {
-  height: 100px;
-  background-color: Lavender;
-}
 
 .substance {
   /* height: 500px; */
@@ -120,7 +136,7 @@ body {
 .info{
   height: 100%;
   order: 2;
-  flex-grow: 1;
+  width: 25%;
   border-left: 3px solid #2F404E;
 }
 .info-name{
@@ -151,15 +167,14 @@ body {
 }
 .add-to-cart{
   text-align: center;
-  background-color: #2F404E;
-  height: 25px;
-  /* width: 20%; */
+  color: #2F404E;
+  margin-top: 2px;
+  height: 30px;
+  font-size: 30px;
 }
 .grid {
-  width: 100%;
-  max-width: 900px;
+  width: 75%;
   order: 1;
-  flex-grow: 2;
   background: #CCC;
   height: 100%;
 }
@@ -171,6 +186,7 @@ body {
 }
 
 .grid-item {
+  flex-grow: 2;
   width: 21.833%;
   padding-bottom: 21.833%;
   overflow: hidden;
