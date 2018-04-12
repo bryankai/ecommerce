@@ -38,7 +38,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
   const signupButton = document.querySelector('#email-signup-button')
-  signupButton.addEventListener('click', validateEmail)
+  signupButton.addEventListener('click', ()=> {
+    console.log(event)
+    validateEmail()
+  })
+
 
   // const productsGrid = document.querySelector('.products-grid')
   //
