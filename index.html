@@ -1,38 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="index.css"></link>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="index.css"></link>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+  <script defer src="./javaScript/carousel.js"></script>
+</head>
 
 <body>
   <div class="navbar"></div>
 
   <div class="substance">
-    <div class="carousel-container"></div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="./photos/classic-watches.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./photos/dress-watches.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./photos/sports-watches.jpg" style="width:100%">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="carouselDots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Email Signup -->
     <div class="signup-container">
       <div clas="signup-title">
         <h1> Signup for the Latest Deals! </h1>
       </div>
       <div class="signup-body">
-        <p>Lorem ipsum Sed in anim reprehenderit laboris in nisi dolore elit. Lorem ipsum Anim non tempor in voluptate irure et nisi in occaecat quis. </p>
       </div>
       <form class="email-input">
         <input class="form-control warning" type="email" placeholder="Enter your email" id="email-signup">
         <input type="submit" value="Signup" class="button" id="email-signup-button">
       </form>
-
-
     </div>
   </div>
-
-
-
-  <a href="/products.html">Products</a>
-
 
   <!-- Programmatic creation of data within page-->
   <div class="footer">
@@ -43,7 +68,7 @@
         </div>
         <div class="map">
           <a href="https://www.google.com/maps/place/Galvanize+-+Seattle/@47.5989507,-122.3338016,15z/data=!4m2!3m1!1s0x0:0xc82c719d1795d092?sa=X&ved=0ahUKEwjsxaf0xqnaAhXWFsAKHbBuBisQ_BIIgwEwCg">
-          <img src="images/galvanizeMap.png" alt="ice cream truck" width=500px></a>
+          <img src="./photos/galvanizeMap.png" alt="ice cream truck" width=500px></a>
         </div>
       </div>
       <div class="footer-column">
@@ -111,12 +136,12 @@
   </div>
 
 
-    <script src="/javaScript/data.js"></script>
-    <script src="/javaScript/functions.js"></script>
-    <script src="/javaScript/index.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  </body>
+  <script src="/javaScript/data.js"></script>
+  <script src="/javaScript/functions.js"></script>
+  <script src="/javaScript/index.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</body>
+
 </html>
