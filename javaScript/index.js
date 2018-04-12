@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let totalArr = []
   const navBar = document.querySelector('.navbar')
   const navBrand = document.createElement('div')
+  navBrand.classList.add('navBrand')
   const navOptions = document.createElement('div')
     navOptions.classList.add('navOptions')
   const navLogo = document.createElement('img')
@@ -13,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function(){
     navTitle.classList.add('navTitle')
     navTitle.setAttribute('href', '/index.html')
     navTitle.innerHTML = 'Just in Time'
-
   const homeLink = document.createElement('a')
     homeLink.classList.add('navLink')
     homeLink.setAttribute('href', '/index.html')
