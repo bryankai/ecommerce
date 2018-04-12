@@ -20,10 +20,10 @@
       <div class="signup-body">
         <p>Lorem ipsum Sed in anim reprehenderit laboris in nisi dolore elit. Lorem ipsum Anim non tempor in voluptate irure et nisi in occaecat quis. </p>
       </div>
-      <div class="email-input">
-        <form><input class="form-control warning" type="email" placeholder="Enter your email" id="email-signup"></form>
-        <button class="button" id="email-signup-button">Signup</button?>
-      </div>
+      <form class="email-input">
+        <input class="form-control warning" type="email" placeholder="Enter your email" id="email-signup">
+        <input type="submit" value="Signup" class="button" id="email-signup-button">
+      </form>
 
 
     </div>
@@ -50,23 +50,33 @@
         <div class="column-title">
           <h3>On Sale</h3>
         </div>
-        <ul class="products">
-          <li>
+        <ul class="products-preview">
+          <li id="prod1">
             <img src="http://placehold.it/75">
             <div class="product-name">
               product 1
+              <div class="hide">
+                <i class="fas fa-cart-plus"></i>
+              </div>
             </div>
+
           </li>
-          <li>
+          <li id="prod2">
             <img src="http://placehold.it/75">
             <div class="product-name">
               product 2
+              <div class="hide">
+                <i class="fas fa-cart-plus"></i>
+              </div>
             </div>
           </li>
-          <li>
+          <li id="prod3">
             <img src="http://placehold.it/75">
             <div class="product-name">
               product 3
+              <div class="hide">
+                <i class="fas fa-cart-plus"></i>
+              </div>
             </div>
           </li>
         </ul>
