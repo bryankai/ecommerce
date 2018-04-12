@@ -7,7 +7,7 @@ body{
   width: 100%;
   min-height: 80px;
   color: white;
-  background-color: #2F404E;
+  background-color: white;
   display: flex;
 }
 .navTitle {
