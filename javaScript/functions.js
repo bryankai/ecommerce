@@ -27,3 +27,30 @@ function validateEmail () {
 //////////////
 // PRODUCTS //
 //////////////
+const renderCart = function(){
+  const list = document.createElement('li')
+  const total = document.createElement('div')
+    total.classList.add('add-to-cart')
+  const totalNum = document.createElement('span')
+    totalNum.style.float = 'right'
+  const totalText = document.createElement('span')
+    totalText.style.float = 'left'
+  empty(cartContainer)
+  const lis = currentCart.map(item => `<li>(${item.quantity}) ${item.name} ..... $${(item.price * item.quantity).toFixed(2)}</li>`).join('')
+  totalArr = []
+  currentCart.map( item => {
+    totalArr.push(item.price * item.quantity)
+  var sum =  totalArr.reduce(function(a,b){
+      return a+b;
+    }, 0)
+    totalNum.innerHTML = `$${(sum).toFixed(2)}`
+    totalText.innerHTML = 'Total:'
+
+    total.appendChild(totalText)
+    total.appendChild(totalNum)
+
+    cartList.innerHTML = lis
+    cartContainer.appendChild(cartList)
+    cartContainer.appendChild(total)
+})
+}
