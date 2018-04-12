@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){
 
 
+  let totalArr = []
   const navBar = document.querySelector('.navbar')
   const navBrand = document.createElement('div')
+  navBrand.classList.add('navBrand')
   const navOptions = document.createElement('div')
     navOptions.classList.add('navOptions')
   const navLogo = document.createElement('img')
@@ -12,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function(){
     navTitle.classList.add('navTitle')
     navTitle.setAttribute('href', '/index.html')
     navTitle.innerHTML = 'Just in Time'
-
   const homeLink = document.createElement('a')
     homeLink.classList.add('navLink')
     homeLink.setAttribute('href', '/index.html')
@@ -21,18 +22,22 @@ document.addEventListener('DOMContentLoaded', function(){
     productsLink.classList.add('navLink')
     productsLink.innerHTML = '| Products |'
     productsLink.setAttribute('href', '/products.html')
-  const cart = document.createElement('a')
-    cart.innerHTML = `<i class="fas fa-shopping-cart"></i>`
-    cart.classList.add('cart')
-
 
   navBrand.appendChild(navLogo)
   navBrand.appendChild(navTitle)
 
   navOptions.appendChild(homeLink)
   navOptions.appendChild(productsLink)
-  navOptions.appendChild(cart)
 
   navBar.appendChild(navBrand)
   navBar.appendChild(navOptions)
+
+  const cart = document.createElement('a')
+  navOptions.appendChild(cart)
+    cart.innerHTML = `<i class="fas fa-shopping-cart"></i>`
+    cart.classList.add('cart')
+    cart.addEventListener('click', event => {
+
+    renderCart()
+  })
 })
