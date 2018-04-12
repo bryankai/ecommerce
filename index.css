@@ -2,6 +2,11 @@
 body{
   margin: 0;
 }
+
+a {
+  text-decoration: none
+}
+
 .navbar {
   padding-top: 10px;
   width: 100%;
@@ -10,14 +15,15 @@ body{
   background-color: white;
   display: flex;
 }
-.navTitle {
+
+.navTitle{
   font-size: 59px;
   color: black;
 }
 .navLogo {
   height: 59px;
   width: 59px;
-  /* margin-left: 10px; */
+  margin: 0 15px;
   /* transform: rotate(270deg); */
 }
 .navBrand {
@@ -129,7 +135,7 @@ body {
 /* The dots/bullets/indicators */
 .carouselDots {
   margin-top: -50px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   z-index: 10;
   /* background-color: black; */
 }
@@ -172,12 +178,14 @@ body {
 /* Signup */
 
 .signup-container {
-  background-color: papayawhip;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: flex-start;
   padding: 8em 3em;
+  color: #212F3C;
+  background-color: lightgray;
 }
 
 .email-input {
@@ -235,10 +243,19 @@ body {
 /* Products */
 .filter {
   width: 100%;
-  height: 25px;
-  background-color: #2F404E
+  min-height: 25px;
+  background-color: #2F404E;
+  padding: 5px;
 }
+
+.filter:hover {
+  color: white;
+  font-weight: bold;
+}
+
 .filters {
+  color: lightgray;
+  font-size: 24px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -250,19 +267,20 @@ body {
 .products-grid {
   background-color: gray;
   width: 100%;
-  height: 90vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: row;
 }
 .cartUl{
   margin-left: 2px;
   padding-left: 0px;
+  background-color: gray;
+  color: white;
 }
 .info{
   height: 100%;
   order: 2;
   width: 25%;
-  border-left: 3px solid #2F404E;
 }
 .info-name{
   width: 100%;
@@ -287,7 +305,7 @@ body {
   width: 100%;
   color: white;
   margin-left: 2px;
-  font-size: 25px;
+  font-size: 20px;
   border-bottom: 1px solid #2F404E;
 }
 .add-to-cart{
@@ -301,7 +319,7 @@ body {
   width: 75%;
   order: 1;
   background: #CCC;
-  height: 100%;
+  min-height: 75vh;
 }
 
 .grid::after {
@@ -430,16 +448,21 @@ body {
 li {
   display: flex;
   padding: 10px;
-  background: #58585b;
   transition: all 0.5s ease;
 }
 
 li .product-name {
   padding: 10px;
   min-height: 60px;
+  display: inline;
 }
 
-li:hover {
+li img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.products-preview li:hover {
   background: gray;
 }
 
@@ -450,17 +473,19 @@ li:hover .product-name .hide{
 .hide {
   display: none;
 }
-a:link, a:visited {
+
+.navOptions a:link, .navOptions a:visited {
   color: black;
-  text-decoration: none
 }
 
-a:hover, a:active {
+.navOptions a:hover, .navOptions a:active {
+  color: darkgray;
+}
+
+ul a:link, ul a:visited {
+  color: white;
+}
+
+ul a:hover, ul a:active {
   color: lightgray;
-  text-decoration: none
 }
-
-/* .map .img {
-  height: 100px;
-  width: 100px;
-} */
